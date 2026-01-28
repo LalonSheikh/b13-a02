@@ -116,6 +116,17 @@ hr {
   height: 140px; 
   width: 140px;
   height: 140px; */
+  position: relative;
+}
+.badge {
+  position: absolute;
+  background: #00ff88;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 01rem;
+  top: 150px;
+  right: 620px;
 }
 .banner-img img {
   background: linear-gradient(160deg, #ff4ecd, #ffc94a);
@@ -254,8 +265,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  justify-content: center;
-  align-items: center;
+  place-content: center;
 }
 .tech-wave {
   font-size: 60px;
@@ -296,6 +306,16 @@ hr {
     /* margin: 0 auto; */
     border: 0.6rem solid #2a186c;
     /* margin-left: 5rem; */
+  }
+  .badge {
+    position: absolute;
+    background: #00ff88;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 01rem;
+    top: 150px;
+    right: 160px;
   }
   .about-description {
     line-height: 20px;
