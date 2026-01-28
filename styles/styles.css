@@ -242,6 +242,31 @@ hr {
   background: url(/assets/footer-bg.png);
   height: 412px;
   margin-top: 120px;
+  color: white;
+}
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tech-wave {
+  font-size: 60px;
+  text-align: center;
+}
+.copyright {
+  margin-left: 50rem;
+}
+
+.footer-container {
+  display: block;
 }
 
 @media screen and (max-width: 576px) {
@@ -293,5 +318,8 @@ hr {
   }
   .choose-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-social-media {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
