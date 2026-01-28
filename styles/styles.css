@@ -61,6 +61,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+hr {
+  color: rgb(113, 40, 231);
+  padding: 0 3rem;
+  opacity: 0.5;
+}
 
 /* header styles */
 
@@ -143,6 +148,15 @@
   font-size: 1.25rem;
   padding: 0 1rem;
 }
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+.about-card h4 {
+  font-size: 3rem;
+  color: #00ff88;
+}
 
 @media screen and (max-width: 576px) {
   .menu {
@@ -175,5 +189,8 @@
   .about-description {
     line-height: 20px;
     /* font-size: 2rem; */
+  }
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
