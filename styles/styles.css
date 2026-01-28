@@ -160,7 +160,9 @@ hr {
 }
 
 /* featured related styles */
-.feature-title {
+.feature-title,
+.host-title,
+.choose-title {
   text-align: center;
   font-size: 3.6rem;
   color: white;
@@ -187,7 +189,24 @@ hr {
 .feature-card h5 {
   color: #00ff88;
 }
-
+.host-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  border-radius: 5px;
+  background-color: #281147;
+  max-width: 85%;
+  margin-left: 5rem;
+}
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: 5px;
+  padding: 0 50rem 0 0;
+}
 @media screen and (max-width: 576px) {
   .menu {
     display: none;
@@ -225,5 +244,14 @@ hr {
   }
   .feature-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .host-container {
+    display: block;
+    text-align: center;
+  }
+  .social-media {
+    display: flex;
+    gap: 10px;
+    text-align: justify;
   }
 }
