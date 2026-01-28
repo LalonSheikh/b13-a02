@@ -207,6 +207,43 @@ hr {
   place-items: 5px;
   padding: 0 50rem 0 0;
 }
+
+.choose-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 85%;
+  margin-left: 5rem;
+}
+.choose-card {
+  color: white;
+  /* width: 380px; */
+  /* height: 480px; */
+  padding: 1.25rem;
+  background-color: #281147;
+  /* border: 1px solid red; */
+  border-radius: 1rem;
+}
+.layout-1 {
+  grid-row: span 2;
+}
+.layout-2,
+.layout-3,
+.layout-4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.choose-card h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer-section {
+  background: url(/assets/footer-bg.png);
+  height: 412px;
+  margin-top: 120px;
+}
+
 @media screen and (max-width: 576px) {
   .menu {
     display: none;
@@ -253,5 +290,8 @@ hr {
     display: flex;
     gap: 10px;
     text-align: justify;
+  }
+  .choose-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
